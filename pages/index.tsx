@@ -1,86 +1,116 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Header from "../components/Header";
+import Blob from "../components/Blob";
+import HeroForm from "../components/HeroForm";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
-
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and its API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <Header></Header>
+      <section className="flex justify-around  pt-28  ">
+        {/* Left Section */}
+        <div className="flex flex-col max-w-md  space-y-1 my-10  items-center py-5  ">
+          <h1 className=" text-2xl font-semibold">Book your Free Class</h1>
+          <p className=" font-semibold text-gray-500 ">
+            Learn from India's Best Teachers
+          </p>
+          <h2 className=" text-xl font-semibold ">Enter Your Details</h2>
+          <HeroForm></HeroForm>
         </div>
-      </main>
+        {/* Right Section */}
+        <div className="flex relative  w-1/3">
+          <div className="absolte ">
+            <Blob color="#59B2FF" width="500px"></Blob>
+          </div>
+          <div className="relative top-[300px] right-24 ">
+            <Blob color="#80B2BD" width="300px"></Blob>
+          </div>
+          <div className="relative top-[250px] left-[300px] ">
+            <Blob color="#FDCB6E" width="300px"></Blob>
+          </div>
 
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
+          <img
+            src="/assets/home/hero_boy.png"
+            alt=""
+            className=" absolute -bottom-24 right-28"
+          />
+          <img
+            src="/assets/home/hero_cat.png"
+            alt=""
+            className=" absolute -bottom-24 -right-20"
+          />
+        </div>
+      </section>
+      {/* Dashboard */}
+      <section className=" mt-64 flex justify-evenly ">
+        <div className="flex bg-[#EBFBF3] h-80 w-[549px] p-3 rounded">
+          <div className="flex flex-col   justify-center  ">
+            <h1 className=" font-bold  text-xl">Student Dashboard</h1>
+            <h3 className=" w-72  text-gray-500 font-medium text-lg mt-5">
+              Get Study Material, Sample Papers, Notes & NCERT Textbook Solution
+            </h3>
+            <button className="bg-gradient-to-r from-orange-400 to-rose-400 h-9  w-48 rounded-md text-white font-semibold mt-9">
+              Student Dashboard
+            </button>
+          </div>
+          <div className=" relative flex  items-end">
+            <img
+              src="/assets/home/dashboard/dna.png"
+              alt=""
+              className="absolute top-0 left-16 "
+            />
+            <img
+              src="/assets/home/dashboard/earth.png"
+              alt=""
+              className="absolute  top-16 left-0 "
+            />
+            <img
+              src="/assets/home/dashboard/satelite_small.png"
+              alt=""
+              className="absolute bottom-14 -left-3 "
+            />
+            <img
+              src="/assets/home/dashboard/satelite.png"
+              alt=""
+              className="absolute  top-8 right-8"
+            />
+            <img
+              src="/assets/home/dashboard/setting.png"
+              alt=""
+              className="absolute  bottom-20 -left-2"
+            />
+            <img
+              src="/assets/home/dashboard/stu_boy.png"
+              alt=""
+              className="  z-10"
+            />
+          </div>
+        </div>
+        <div className="flex bg-[#EBFBF3] h-80 w-[549px] p-3 relative">
+          <div className="flex flex-col   justify-center ">
+            <h1 className="font-bold  text-xl">Teacher Dashboard</h1>
+            <h3 className="w-72  text-gray-500 font-medium text-lg mt-5 z-10">
+              View Your Dashboard and Manage Your Classes
+            </h3>
+            <button className="bg-gradient-to-r from-orange-400 to-rose-400 h-9  w-48 rounded-md text-white font-semibold mt-9">
+              Teacher Dashboard
+            </button>
+          </div>
+
+          <img
+            src="/assets/home/dashboard/teacher.png"
+            alt=""
+            className="absolute bottom-12 right-3"
+          />
+        </div>
+      </section>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

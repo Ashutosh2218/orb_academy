@@ -1,4 +1,3 @@
-import { CleaningServices } from "@mui/icons-material";
 import React, { useEffect, useRef } from "react";
 
 function Blob(props) {

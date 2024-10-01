@@ -1,4 +1,3 @@
-import { CleaningServices } from "@mui/icons-material";
 import React, { useState } from "react";
 
 function Hero_Dropdown() {

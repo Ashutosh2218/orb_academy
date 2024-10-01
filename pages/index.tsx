@@ -145,16 +145,16 @@ const Home: NextPage = () => {
       </section>
 
       {/* Benefits Section */}
-      <section>
-        <div>
+      <section className="flex justify-center my-20">
+        <div className=" flex flex-col w-[80%]  ">
           <div>
-            <h1>Powerful Online Tuitions</h1>
-            <h2>Designed for excellence</h2>
+            <h1 className=" text-4xl font-medium">Powerful Online Tuitions</h1>
+            <h2 className=" text-3xl font-medium  text-black text-opacity-60">Designed for excellence</h2>
           </div>
-          <div>
+          <div className=" flex">
             <div>
               <img src="assets/home/benefits/benefit1.png" alt="" />
-              <h4>Build a Strong Conceptual Foundation</h4>
+              <h4  className=" max-w-[200px] text-lg font-medium">Build a Strong Conceptual Foundation</h4>
             </div>
             <div>
               <img src="assets/home/benefits/benefit2.png" alt="" />

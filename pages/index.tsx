@@ -3,8 +3,42 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Blob from "../components/Blob";
 import HeroForm from "../components/HeroForm";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
+  const articles = [
+    {
+      title: "PATH TO EXCEL IN CBSE CLASS 12 ENGLISH CORE",
+      description:
+        "English is one of the key components of senior secondary examinations conducted by CBSE. Being one of the most scoring subjects, acing English examination is of paramount importance in achieving a decent percentage in Class 12th Boards. Students are required to follow a well-balanced strategy and systematic approach to excel ...",
+      link: "#",
+    },
+    {
+      title: "HOW TO EXCEL IN CBSE CLASS 10 ENGLISH BOARD EXAM",
+      description:
+        "English is one of the key components of senior secondary examinations conducted by CBSE. Acing the English examination is of paramount importance in attaining a decent percentage in Class 10th Boards. The Class 10 English syllabus of the CBSE board is divided into two parts: Communicative English Language and Literature ...",
+      link: "#",
+    },
+    {
+      title: "CLASS 10 ARTIFICIAL INTELLIGENCE SAMPLE PAPER 2022-23",
+      description:
+        "CBSE class 10 Artificial Intelligence Sample Paper 2022-23 is now available on the myCBSEguide app and student dashboard. You can download class 10 AI (code 417) model papers with solutions as PDF files. As you know that AI code 417 is recently introduced by CBSE in classes 9th and 10th ...",
+      link: "#",
+    },
+    {
+      title: "CBSE PRACTICE PAPERS 2023",
+      description:
+        "CBSE has issued Practice Papers for the class 10 and 12 board exams for the session 2022-23. These practice papers are different from the sample papers issued earlier. What are CBSE Practice Papers 2023? As you know CBSE issues one sample paper for each subject every year. All these model ...",
+      link: "#",
+    },
+    {
+      title: "NCERT HOMEWORK APP FOR TEACHERS - IT'S FREE",
+      description:
+        "Yes, NCERT Homework App is absolutely free. Teachers can use it to make unlimited homework assignments and worksheets completely free of cost. How to access NCERT Homework Creator? NCERT homework creator app is available on two modes, website and mobile app. You can access the NCERT homework maker at ...",
+      link: "#",
+    },
+  ];
+
   return (
     <div className="">
       <Head>
@@ -109,6 +143,116 @@ const Home: NextPage = () => {
           />
         </div>
       </section>
+
+      {/* Benefits Section */}
+      <section>
+        <div>
+          <div>
+            <h1>Powerful Online Tuitions</h1>
+            <h2>Designed for excellence</h2>
+          </div>
+          <div>
+            <div>
+              <img src="assets/home/benefits/benefit1.png" alt="" />
+              <h4>Build a Strong Conceptual Foundation</h4>
+            </div>
+            <div>
+              <img src="assets/home/benefits/benefit2.png" alt="" />
+              <h4>Ace Your Career in your Life</h4>
+            </div>
+            <div>
+              <img src="assets/home/benefits/benefit3.png" alt="" />
+              <h4>Get Help in your Development</h4>
+            </div>
+          </div>
+          <h3>
+            Orb Academy`s unique improvement based Coaching helps you Bemome a
+            Pro
+          </h3>
+        </div>
+        <div></div>
+      </section>
+      {/* Resources Section */}
+      <section>
+        <div>
+          <h1>Resources</h1>
+          <h2>To help you learn at your own pace</h2>
+          <h3>
+            Be an independent self motivated learner. Our Classes are designed
+            to improve your Career Potention many folds
+          </h3>
+        </div>
+        <div>
+          <img src="assets/home/resources/rsc1.png" alt="" />
+          <h1>Concept Videos & Cheat Sheet</h1>
+          <span>
+            <img src="" alt="" />
+            Short & Crisp videos for better concept clarity
+          </span>
+          <span>
+            <img src="" alt="" />A disciplined approach for self paced coaching
+            and improving Skills
+          </span>
+          <span>
+            <img src="" alt="" />A detailed Cheat Sheet to improve Efficiency
+            and Effectictive Development
+          </span>
+        </div>
+        <div>
+          <img src="assets/home/resources/rsc2.png" alt="" />
+          <h1>Test and Smart Results</h1>
+          <span>
+            <img src="" alt="" />
+            Concept-wise Tests
+          </span>
+          <span>
+            <img src="" alt="" />
+            Identify Your Weak areas through smart results
+          </span>
+        </div>
+        <div>
+          <img src="assets/home/resources/rsc3.png" alt="" />
+          <h1>Doubt`s Resolution</h1>
+          <span>
+            <img src="" alt="" />
+            Clear Your doubts via chat and stay doubtfree
+          </span>
+          <span>
+            <img src="" alt="" />
+            Ask your question anytime - 24x7
+          </span>
+          <span>
+            <img src="" alt="" />
+            Connect with experts
+          </span>
+        </div>
+      </section>
+
+      {/* Popular Articles */}
+
+      {/* <div className="max-w-5xl mx-auto py-8 px-4">
+        <h2 className="text-3xl font-bold mb-6">
+          Popular Articles &amp; what going on
+        </h2>
+        <div className="space-y-6">
+          {articles.map((article, index) => (
+            <div key={index} className="bg-white shadow-md p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-orange-600">
+                {article.title}
+              </h3>
+              <p className="text-gray-700 mt-2">{article.description}</p>
+              <a
+                href={article.link}
+                className="text-orange-500 font-medium mt-4 inline-block hover:underline"
+              >
+                READ MORE
+              </a>
+            </div>
+          ))}
+        </div>
+      </div> */}
+
+      <Footer></Footer>
     </div>
   );
 };

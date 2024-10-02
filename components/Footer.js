@@ -27,7 +27,7 @@ function Footer() {
           {`"`}Unleash Your Potential{`"`}
         </h1>
         <div className="flex bottom-14 space-x-8 justify-center">
-          <Link href={"https://www.facebook.com/profile.php?id=61566453275005"}>
+          <Link href={"https://www.facebook.com/"}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-5 fill-[#fff]  hover:fill-slate-400"
@@ -36,7 +36,7 @@ function Footer() {
               <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
             </svg>
           </Link>
-          <Link href={"https://youtube.com/@sconsultancy?si=-skADh8ppJY3Kq-4"}>
+          <Link href={"https://youtube.com/"}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-5 fill-[#ffffff] hover:fill-slate-400"
@@ -45,7 +45,7 @@ function Footer() {
               <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
             </svg>
           </Link>
-          <Link href={"https://x.com/Sconsultancy_"}>
+          <Link href={"https://x.com"}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-5 fill-[#ffffff] hover:fill-slate-400"
@@ -54,8 +54,8 @@ function Footer() {
               <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
             </svg>
           </Link>
-
-          <Link href={"https://www.instagram.com/sconsultancy_/"}>
+ 
+          <Link href={"https://www.instagram.com/"}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-5 h-5 fill-white hover:fill-slate-400"
@@ -69,12 +69,12 @@ function Footer() {
 
       <div className=" flex justify-evenly max-lg:flex-col max-lg:items-center max-lg:space-y-12  mt-10">
         <div className="flex flex-col justify-center">
-          <h1 className=" font-medium text-white text-2xl pl-1 inline">SCG</h1>
+          <h1 className=" font-medium text-white text-2xl pl-1 inline">ORB Academy</h1>
           <div className=" mt-3 pl-4 flex w-[500px]  max-sm:w-[80vw]   justify-between bg-[#2A2F39] rounded-full   ">
             <input
               type="text"
               id="footer_input"
-              placeholder="Your Work Email"
+              placeholder="Your Mobile Number"
               onChange={(e) => setInput(e.target.value)}
               className=" bg-black bg-opacity-0 w-full  outline-none  font-semibold text-white text-opacity-40 py-4"
             />
@@ -88,28 +88,32 @@ function Footer() {
         </div>
 
         <div className="flex max-sm:flex-col space-x-8 max-sm:space-y-8 text-center text-white ">
-          <div className="flex flex-col space-y-3 ">
-            <h1 className=" text-xl  font-normal">DESIGN</h1>
-            <h3 className="pt-2 opacity-60 text-md">Digital Branding</h3>
-            <h3 className="opacity-60 text-md">E-commerce Design</h3>
-            <h3 className="opacity-60 text-md">UI/UX Design</h3>
-          </div>
-          <div className="flex flex-col space-y-3">
-            <h1 className=" text-xl  font-normal">DEVELOP</h1>
-            <h3 className="pt-2 opacity-60 text-md">E-commerce Development</h3>
-            <h3 className="opacity-60 text-md">Web Development</h3>
-            <h3 className="opacity-60 text-md">App Development</h3>
-          </div>
-          <div className="flex flex-col space-y-3">
-            <h1 className=" text-xl  font-normal">GROW</h1>
-            <h3 className="pt-2 opacity-60 text-md">Digital Marketting</h3>
-            <h3 className="opacity-60 text-md">SEO</h3>
-            <h3 className="opacity-60 text-md">A-B Testing</h3>
-          </div>
+          <span className=" flex flex-col">
+            
+        <Link href={"/teacher"}>Teach on ORB Academy</Link>      
+        <Link href={"/app"}>Get the App</Link>      
+        <Link href={"/aboutus"}>About Us</Link>      
+        <Link href={"/contactus"}>Contact Us</Link>      
+            </span>
+            <span className=" flex flex-col">
+            
+        <Link href={"/careers"}>Careers</Link>      
+        <Link href={"blogs"}>Blog</Link>      
+        <Link href={"/support"}>Help and Support</Link>      
+        <Link href={"/affiiates"}>Affiliate</Link>      
+            </span><span className=" flex flex-col">
+            
+            <Link href={"/investors"}>Investors</Link>      
+            <Link href={"/terms"}>Terms</Link>      
+            <Link href={"/privacy-policy"}>Privacy Policy</Link>      
+            {/* From Udemy */}
+            <Link href={"/accessibility-statement"}>Accessibility Statement</Link>      
+                </span>      
+
         </div>
       </div>
       <div className="flex w-3/4 justify-between mt-16 text-white opacity-80">
-        <div className=" ">SCG</div>
+        <div className=" ">Designed and Developed By SCG</div>
         <div className="flex space-x-5">
           <Link href={"/terms"}>
             <h3>Terms</h3>
